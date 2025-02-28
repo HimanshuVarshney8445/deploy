@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    height: 55%;
+    width: 20%;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+    justify-content: center;
+}
+.number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(172, 169, 169);
+    color: #ffff;
+    cursor: pointer;
+    font-size: x-large;
+    border-radius: 4px;
+    transition: all 100ms ease-in 0ms;
+}
+.number:hover{
+    opacity: 0.75;
+}
+.screen{
+    border-radius: 15px;
+    height: 18%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 10px;
+    border: 2px solid black;
+    font-size: xx-large;
+    color: rgb(55, 53, 53);
+    font-family: 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(182, 226, 182);
+}
+.keyboard{
+    height: 82%;
+    width: 100%;
+    display: flex;
+    gap: 2px;
+    border-radius: 15px;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: #ffff;
+    display: grid;
+    gap: 2px;
+    grid-template-areas: "n1 n2 n3"
+                         "n4 n5 n6"
+                         "n7 n8 n9"
+                         "p  n0  m"
+                         "e  e  c";
+}
+#num0{
+    grid-area: n0;
+}
+#num1{
+    grid-area: n1;
+}
+#num2{
+    grid-area: n2;
+}
+#num3{
+    grid-area: n3;
+}
+#num4{
+    grid-area: n4;
+}
+#num5{
+    grid-area: n5;
+}
+#num6{
+    grid-area: n6;
+}
+#num7{
+    grid-area: n7;
+}
+#num8{
+    grid-area: n8;
+}
+#num9{
+    grid-area: n9;
+}
+#numPlus{
+    grid-area: p;
+}
+#numMinus{
+    grid-area: m;
+}
+#numEqual{
+    grid-area: e;
+}
+#numC{
+    grid-area: c;
+}
